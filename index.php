@@ -24,6 +24,9 @@
             <div>
                 Scadenza: <?php echo $food -> getExpireDate(); ?>
             </div>
+            <div>
+                Spese di spedizione: <?php echo $food -> getShipCost(); ?> €
+            </div>
         </div>
     <?php
         }
@@ -48,6 +51,9 @@
         </div>
         <div>
             Età: <?php echo $toy -> getAge(); ?> anni
+        </div>
+        <div>
+            Spese di spedizione: <?php echo $toy -> getShipCost(); ?> €
         </div>
     </div>
     <?php

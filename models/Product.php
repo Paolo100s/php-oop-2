@@ -27,6 +27,10 @@ class Product {
     }
 
     public function setPrice($price){
+        if($price < 0){
+            throw new Exception("Errore nel prezzo");
+        }
+
         $this -> price = $price;
     }
 
